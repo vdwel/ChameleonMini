@@ -37,11 +37,7 @@ static const MapEntryType PROGMEM ConfigurationMap[] = {
 #endif
 #ifdef CONFIG_MF_NTAG21x_SUPPORT
        { .Id = CONFIG_MF_NTAG216,      .Text = "NTAG216" },
-#endif
-#ifdef CONFIG_MF_NTAG21x_SUPPORT
        { .Id = CONFIG_MF_NTAG215,      .Text = "NTAG215" },
-#endif
-#ifdef CONFIG_MF_NTAG21x_SUPPORT
        { .Id = CONFIG_MF_NTAG213,      .Text = "NTAG213" },
 #endif
 };
@@ -213,8 +209,6 @@ static const PROGMEM ConfigurationType ConfigurationTable[] = {
         .MemorySize = NTAG216_MEM_SIZE,
         .ReadOnly = false
     },
-#endif
-#ifdef CONFIG_MF_NTAG21x_SUPPORT
     [CONFIG_MF_NTAG215] = {
         .CodecInitFunc = ISO14443ACodecInit,
         .CodecDeInitFunc = ISO14443ACodecDeInit,
@@ -230,8 +224,6 @@ static const PROGMEM ConfigurationType ConfigurationTable[] = {
         .MemorySize = NTAG215_MEM_SIZE,
         .ReadOnly = false
     },
-#endif
-#ifdef CONFIG_MF_NTAG21x_SUPPORT
     [CONFIG_MF_NTAG213] = {
         .CodecInitFunc = ISO14443ACodecInit,
         .CodecDeInitFunc = ISO14443ACodecDeInit,
