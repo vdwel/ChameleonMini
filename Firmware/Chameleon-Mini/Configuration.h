@@ -41,6 +41,11 @@ typedef enum  {
 #ifdef CONFIG_ISO14443A_READER_SUPPORT
 	CONFIG_ISO14443A_READER,
 #endif
+#ifdef CONFIG_MF_NTAG21x_SUPPORT
+    CONFIG_MF_NTAG216,
+    CONFIG_MF_NTAG215,
+    CONFIG_MF_NTAG213,
+#endif
     /* This HAS to be the last element */
     CONFIG_COUNT
 } ConfigurationEnum;
